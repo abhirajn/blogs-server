@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use('/api' , Analysis)
 
-app.get('/' , (req , res)=>{
+app.get('/*' , (req , res)=>{
     res.send("hello world")
 })
 app.listen(process.env.PORT || 3000 , (req,res)=>[
