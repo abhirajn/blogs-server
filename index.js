@@ -13,6 +13,6 @@ app.use('/api' , Analysis)
 app.get('/' , (req , res)=>{
     res.send("hello world")
 })
-app.listen(process.env.PORT || 8000 , (req,res)=>[
+app.listen(process.env.PORT || 3000 , (req,res)=>[
     console.log("server started at port 8000")
 ])
